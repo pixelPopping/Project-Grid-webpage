@@ -1,0 +1,12 @@
+.container > div {
+    /* 
+    Just to make the item content look nicer.
+    */
+    display: box;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    border-radius: 0.25em;
+    font-size: 2rem;
+    background-color: var(--yellow);
+  }
