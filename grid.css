@@ -1,9 +1,20 @@
+/* grid.css */
+
 .grid > main {
     display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 400px 400px 400px 400px 400px 400px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-items: stretch;
-    align-items: stretch;
+    grid-template-columns: 400px 400px; /* Two columns, each 400px wide */
+    grid-template-rows: repeat(6, 400px); /* Six rows, each 400px high */
+    grid-column-gap: 20px; /* 20px gap between columns */
+    grid-row-gap: 20px; /* 20px gap between rows */
+    justify-items: stretch; /* Stretch items to fill the column width */
+    align-items: stretch; /* Stretch items to fill the row height */
+}
+
+.grid > main > div {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
