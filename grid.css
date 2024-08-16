@@ -2,47 +2,53 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: 1fr; /* Single column for full width layout */
+    grid-template-rows: auto auto 1fr auto; /* Header, Nav, Main, Footer */
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "footer";
     gap: 10px;
     padding: 20px;
+    min-height: 100vh; /* Full viewport height */
   }
   
-  /* Grid items */
-  .grid img {
-    grid-column: span 2;
-    width: 100%;
-    height: auto;
-  }
-  
-  .grid div {
-    background-color: lightgrey;
+  /* Layout elements */
+  .header {
+    grid-area: header;
+    background-color: #f2a900;
     padding: 20px;
     text-align: center;
-    font-size: 1.2em;
   }
   
-  /* Inner grid structure */
-  .header {
-    grid-column: 1 / -1; /* Spans all columns */
-    background-color: #f2a900;
-  }
-  
-  .sidebar {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
+  .nav {
+    grid-area: nav;
     background-color: #0033cc;
+    padding: 20px;
+    text-align: center;
   }
   
   .main {
-    grid-column: 2 / -1;
-    grid-row: 2 / 3;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(6, 400px); /* 6 rows of 400px each */
+    gap: 10px;
     background-color: #00cc66;
+    padding: 10px;
+  }
+  
+  .main img {
+    width: 100%; /* Each image fits its grid cell */
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the cell without distortion */
   }
   
   .footer {
-    grid-column: 2 / -1;
-    grid-row: 3 / 4;
+    grid-area: footer;
     background-color: #ff3333;
+    padding: 20px;
+    text-align: center;
   }
   
