@@ -55,7 +55,7 @@ h1 {
   width: 100%; /* Ensure images fit their grid cells */
   height: 100%; /* Ensure images cover the grid cell */
   object-fit: cover; /* Ensures images cover the cell without distortion */
-  display: flexbox; /* Removes extra space below images */
+  display: inline-block; /* Removes extra space below images */
 }
 
 .footer {
@@ -64,5 +64,4 @@ h1 {
   padding: 20px;
   text-align: center;
 }
-
 
