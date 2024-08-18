@@ -13,12 +13,12 @@ h1 {
 /* Grid container */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* 1/3 for nav, 2/3 for main */
+  grid-template-columns: 1fr 2fr; /* Main section occupies 2/3 of the width */
   grid-template-rows: auto 1fr auto; /* Auto height for header, main content, and footer */
   grid-template-areas:
     "header header"
     "main main"
-    "footer footer";
+    "footer footer"; /* Define areas for header, main, and footer */
   gap: 10px;
   padding: 20px;
   min-height: 100vh; /* Full viewport height */
@@ -39,6 +39,7 @@ h1 {
   grid-template-rows: repeat(3, 400px); /* 3 rows of 400px each */
   gap: 10px;
   padding: 10px;
+  background-color: #00cc66;
 }
 
 .main img {
@@ -53,4 +54,5 @@ h1 {
   background-color: #ff3333;
   padding: 20px;
   text-align: center;
+  color: white;
 }
