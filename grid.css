@@ -35,7 +35,6 @@
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     grid-template-rows: repeat(6, 400px); /* 6 rows of 400px each */
     gap: 10px;
-    background-color: #00cc66;
     padding: 10px;
   }
   
