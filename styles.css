@@ -19,7 +19,7 @@ h1 {
   grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
   grid-template-areas:
     "header header"
-    "sidebar main"
+    "main main"
     "footer footer"; /* Define areas for header, sidebar, main, and footer */
   gap: 10px;
   padding: 20px;
