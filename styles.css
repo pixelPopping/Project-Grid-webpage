@@ -47,8 +47,7 @@ main {
   height: 100%; /* Ensure images cover the grid cell */
   object-fit: cover; /* Ensures images cover the cell without distortion */
   display: block; /* Removes extra space below images */
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 .footer {
