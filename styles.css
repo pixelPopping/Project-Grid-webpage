@@ -11,7 +11,7 @@ h1 {
 }
 
 /* Grid container */
-.grid {
+main {
   display: grid;
   grid-template-columns: 1fr 2fr; /* Main section occupies 2/3 of the width */
   grid-template-rows: auto 1fr auto; /* Auto height for header, main content, and footer */
