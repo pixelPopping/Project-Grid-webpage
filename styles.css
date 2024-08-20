@@ -46,7 +46,8 @@ h1 {
   grid-template-columns: repeat(2, 1fr); /* 2 columns for images */
   grid-template-rows: repeat(3, 400px); /* 3 rows of 400px each */
   gap: 10px;
-  padding-right: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
   background-color: #00cc66;
 }
 
