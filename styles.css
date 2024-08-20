@@ -32,6 +32,13 @@ h1 {
   text-align: center;
 }
 
+.nav {
+  grid-area: header;
+  background-color: #f2a900;
+  padding: 20px;
+  text-align: center;
+}
+
 .main {
   grid-area: main;
   display: grid;
