@@ -13,8 +13,8 @@ h1 {
 /* Main Grid Container */
 .container {
   display: grid;
-  grid-template-columns: 1fr; /* Single column layout */
-  grid-template-rows: auto 1fr auto; /* Auto height for header, main content, and footer */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for images */
+  grid-template-rows: repeat(3, 400px); /* 3 rows of 400px each */ /* Auto height for header, main content, and footer */
   grid-template-areas:
     "header"
     "main"
