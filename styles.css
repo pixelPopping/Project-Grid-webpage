@@ -28,6 +28,7 @@ h1 {
 /* Layout elements */
 .header {
   grid-area: header;
+  display: grid;
   background-color: #f2a900;
   padding: 20px;
   text-align: center;
@@ -35,6 +36,7 @@ h1 {
 
 .nav {
   grid-area: nav;
+  display: grid;
   background-color: #f2a900;
   padding-top: 20px;
   text-align: center;
