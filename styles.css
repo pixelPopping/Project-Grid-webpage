@@ -11,69 +11,39 @@ h1 {
 }
 
 /* Main Grid Container */
-.gallery {
+.container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch;
- /* 3 rows of 400px each */ /* Auto height for header, main content, and footer */
+  grid-template-columns: 1fr; /* Single column layout */
+  grid-template-rows: auto auto 1fr auto; /* Adjust as needed for each section */
   grid-template-areas:
     "header"
+    "nav"
     "main"
-    "footer"; /* Define areas for header, main, and footer */
+    "footer"; /* Define areas for header, nav, main, and footer */
   gap: 10px;
   padding: 20px;
   min-height: 100vh; /* Full viewport height */
 }
 
-/* Layout elements */
 .header {
   grid-area: header;
-  display: grid;
   background-color: #f2a900;
   padding: 20px;
   text-align: center;
 }
 
-.header h1 {
-  margin: 0; /* Removes default margin for h1 */
+.nav {
+  grid-area: nav;
+  background-color: #333;
+  padding: 20px;
 }
 
-.header .nav {
-  background-color: #f2a900;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.header .nav a {
-  color: #fff; /* White text color */
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-.header .nav a:hover {
-  text-decoration: underline;
-}
-
-/* Image Gallery Grid */
-.gallery {
+.main {
   grid-area: main;
+  padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns for images */
-  grid-template-rows: repeat(3, 400px); /* 3 rows of 400px each */
-  gap: 10px;
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-.gallery img {
-  width: 100%; /* Ensure images fit their grid cells */
-  height: 100%; /* Ensure images cover the grid cell */
-  object-fit: cover; /* Ensures images cover the cell without distortion */
-  display: block; /* Removes extra space below images */
-  border-radius: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
 }
 
 .footer {
@@ -83,3 +53,20 @@ h1 {
   text-align: center;
   color: white;
 }
+
+
+/* Image Gallery Grid */
+.main .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.main .gallery img {
+  width: 100%; /* Ensure images fit their grid cells */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures images cover the cell without distortion */
+  border-radius: 5px;
+}
+
+
