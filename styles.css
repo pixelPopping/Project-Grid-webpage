@@ -27,6 +27,7 @@ h1 {
 
 /* Layout elements */
 .header {
+  grid-template-areas: header;
   background-color: #f2a900;
   padding: 20px;
   text-align: center;
@@ -54,6 +55,7 @@ h1 {
   height: 100%; /* Ensure images cover the grid cell */
   object-fit: cover; /* Ensures images cover the cell without distortion */
   display: flex; /* Removes extra space below images */
+  border-radius: 5px;
 }
 
 .footer {
