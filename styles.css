@@ -42,7 +42,7 @@ h1 {
   grid-area: main;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
   grid-gap: 20px;
 }
 
@@ -54,25 +54,21 @@ h1 {
   color: white;
 }
 
-
 /* Image Gallery Grid */
 .main .gallery {
   display: grid;
-  grid-template-columns: 400px 400px;
-  grid-template-rows: 400px 400px; 
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible grid */
+  grid-auto-rows: 400px; /* Consistent row height */
   grid-gap: 20px;
-  align-items: stretch;
   max-width: 1200px; 
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 .main .gallery img {
-  display: flex;
   width: 100%; /* Ensure images fit their grid cells */
-  height: auto; /* Maintain aspect ratio */
+  height: 100%; /* Ensure images fill the row height */
   object-fit: cover; /* Ensures images cover the cell without distortion */
   border-radius: 5px;
-  align-items: stretch;
 }
 
 
