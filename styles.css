@@ -41,9 +41,9 @@ h1 {
 .main {
   grid-area: main;
   padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
-  grid-gap: 20px;
+  display: flex;
+  justify-content: center; /* Center the gallery horizontally */
+  align-items: center; /* Center the gallery vertically */
 }
 
 .footer {
@@ -61,7 +61,8 @@ h1 {
   grid-auto-rows: 400px; /* Consistent row height */
   grid-gap: 20px;
   max-width: 1200px; 
-  margin: 0 auto;
+  width: 100%; /* Make sure the gallery takes up the available space */
+  justify-content: center; /* Center the images within the gallery */
 }
 
 .main .gallery img {
@@ -70,5 +71,6 @@ h1 {
   object-fit: cover; /* Ensures images cover the cell without distortion */
   border-radius: 5px;
 }
+
 
 
