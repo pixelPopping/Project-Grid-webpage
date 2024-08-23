@@ -60,7 +60,7 @@ h1 {
   display: grid;
   grid-template-columns: 400px 400px;
   grid-template-rows: 400px 400px;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 .main .gallery img {
@@ -71,6 +71,7 @@ h1 {
   align-items: stretch;
   padding-right: 5%;
   padding-left: 5%;
+  gap: 10px;
 }
 
 
