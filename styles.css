@@ -27,7 +27,7 @@ h1 {
 
 /* Layout elements */
 .header {
-  grid-template-areas: header;
+  grid-area: header;
   background-color: #f2a900;
   padding: 20px;
   text-align: center;
