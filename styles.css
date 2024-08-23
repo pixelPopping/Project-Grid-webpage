@@ -11,10 +11,12 @@ h1 {
 }
 
 /* Main Grid Container */
-.container {
+.gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns for images */
-  grid-template-rows: repeat(3, 400px); /* 3 rows of 400px each */ /* Auto height for header, main content, and footer */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+ /* 3 rows of 400px each */ /* Auto height for header, main content, and footer */
   grid-template-areas:
     "header"
     "main"
