@@ -62,7 +62,7 @@ h1 {
   grid-gap: 20px;
   max-width: 1200px; 
   width: 100%; /* Make sure the gallery takes up the available space */
-  justify-content: center; /* Center the images within the gallery */
+  justify-content: space-evenly; /* Center the images within the gallery */
 }
 
 .main .gallery img {
