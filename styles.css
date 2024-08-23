@@ -62,9 +62,10 @@ h1 {
 
 .footer .p {
   grid-area: footer;
-  padding: 20px;
-  text-align: center;
+  background: linear-gradient(to right, #13b685, #199337); /* Gradient background */
+  padding: 50px 20px;
   color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Image Gallery Grid */
