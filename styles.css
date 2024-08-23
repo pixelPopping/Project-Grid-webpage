@@ -58,7 +58,8 @@ h1 {
 /* Image Gallery Grid */
 .main .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 400px 400px;
   grid-gap: 20px;
 }
 
@@ -67,6 +68,9 @@ h1 {
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Ensures images cover the cell without distortion */
   border-radius: 5px;
+  align-items: stretch;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 
