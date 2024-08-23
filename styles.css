@@ -60,18 +60,19 @@ h1 {
   display: grid;
   grid-template-columns: 400px 400px;
   grid-template-rows: 400px 400px;
-  grid-gap: 10px;
+  grid-gap: 20px;
+  align-items: stretch;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .main .gallery img {
+  display: flex;
   width: 100%; /* Ensure images fit their grid cells */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Ensures images cover the cell without distortion */
   border-radius: 5px;
   align-items: stretch;
-  padding-right: 5%;
-  padding-left: 5%;
-  gap: 10px;
 }
 
 
