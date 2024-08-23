@@ -26,7 +26,7 @@ h1 {
 }
 
 /* Layout elements */
-.main {
+.header {
   grid-area: header;
   display: grid;
   background-color: #f2a900;
@@ -34,13 +34,11 @@ h1 {
   text-align: center;
 }
 
-.main {
-  grid-area: nav;
-  display: grid;
+.nav {
   background-color: #f2a900;
   padding-top: 20px;
-  text-align: center;
 }
+
 
 .main {
   grid-area: main;
