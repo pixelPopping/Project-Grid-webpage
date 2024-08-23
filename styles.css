@@ -60,13 +60,21 @@ h1 {
   justify-content: space-evenly;
 }
 
-.footer .p {
+/* Footer Styling Similar to Header */
+.footer {
   grid-area: footer;
-  background: linear-gradient(to right, #13b685, #199337); /* Gradient background */
-  padding: 50px 20px;
+  background: linear-gradient(to right, #13b685, #199337);/* Gradient background */
+  padding: 50px 20px; /* Consistent padding with the header */
+  text-align: center;
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+.footer p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
 
 /* Image Gallery Grid */
 .main .gallery {
