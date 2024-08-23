@@ -59,11 +59,11 @@ h1 {
 .main .gallery {
   display: grid;
   grid-template-columns: 400px 400px;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 400px 400px; 
   grid-gap: 20px;
   align-items: stretch;
-  padding-right: 5%;
-  padding-left: 5%;
+  max-width: 1200px; 
+margin: 0 auto;
 }
 
 .main .gallery img {
