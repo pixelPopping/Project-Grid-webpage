@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-size: x-large;
-  font-family: bodoni 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
   min-height: 100vh; /* Full viewport height */
 }
 .header {
-  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+  background: linear-gradient(to right, #13b685, #199337); /* Gradient background */
   padding: 50px 20px;
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -46,7 +46,7 @@ h1 {
 .nav {
   position: sticky;
   top: 0;
-  background-color: #333;
+  background-color: #2d7184;
   z-index: 1000;
 }
 
@@ -60,9 +60,8 @@ h1 {
   justify-content: space-evenly;
 }
 
-.footer {
+.footer .p {
   grid-area: footer;
-  background-color: #ff3333;
   padding: 20px;
   text-align: center;
   color: white;
