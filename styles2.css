@@ -59,7 +59,7 @@ body {
   grid-area: nav;
   background: var(--color-secondary);
   padding: var(--spacing-medium);
-  border-right: 1px solid var(--color-dark); /* Adds a border for visual separation */
+  border-right: 1px solid var(--color-dark); 
 }
 
 .nav ul {
@@ -75,11 +75,11 @@ body {
   padding: var(--spacing-small) 0;
   font-size: var(--font-size-base);
   font-weight: bold;
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  transition: color 0.3s ease; 
 }
 
 .nav ul li:hover {
-  color: var(--color-primary); /* Changes text color on hover */
+  color: var(--color-primary); 
   cursor: pointer;
 }
 

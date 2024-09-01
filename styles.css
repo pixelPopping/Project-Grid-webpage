@@ -1,4 +1,4 @@
-/* Basic reset and general styles */
+
 body {
   margin: 0;
   font-size: x-large;
@@ -11,29 +11,28 @@ h1 {
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Main Grid Container */
+
 .container {
   display: grid;
-  grid-template-columns: 1fr; /* Single column layout */
-  grid-template-rows: auto auto 1fr auto; /* Adjust as needed for each section */
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto auto 1fr auto; 
   grid-template-areas:
     "header"
     "nav"
     "main"
-    "footer"; /* Define areas for header, nav, main, and footer */
+    "footer"; 
   gap: 10px;
   padding: 20px;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh; 
 }
 .header {
-  background: linear-gradient(to right, #13b685, #199337); /* Gradient background */
-  padding: 50px 20px;
+  background: linear-gradient(to right, #13b685, #199337); 
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .header h1 {
-  font-size: 3em; /* Increase the font size for the main heading */
+  font-size: 3em; 
   margin: 0;
 }
 
@@ -55,16 +54,15 @@ h1 {
   grid-area: main;
   padding: 20px;
   display: flex;
-  justify-content: center; /* Center the gallery horizontally */
-  align-items: center; /* Center the gallery vertically */
+  justify-content: center; 
+  align-items: center; 
   justify-content: space-evenly;
 }
 
-/* Footer Styling Similar to Header */
+
 .footer {
   grid-area: footer;
-  background: linear-gradient(to right, #13b685, #199337);/* Gradient background */
-  padding: 50px 20px; /* Consistent padding with the header */
+  background: linear-gradient(to right, #13b685, #199337);
   text-align: center;
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -76,15 +74,15 @@ h1 {
 }
 
 
-/* Image Gallery Grid */
+
 .main .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible grid */
-  grid-auto-rows: 400px; /* Consistent row height */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+  grid-auto-rows: 400px; 
   grid-gap: 20px;
   max-width: 1200px; 
-  width: 100%; /* Make sure the gallery takes up the available space */
-  justify-content: space-evenly; /* Center the images within the gallery */
+  width: 100%; 
+  justify-content: space-evenly; 
 }
 
 .main .gallery img {
@@ -99,24 +97,23 @@ h1 {
 .main .gallery img:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
 }
-/* Responsive adjustments with Media Queries */
+
 @media (max-width: 768px) {
   .container {
     padding: 10px;
   }
 
   .main .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller min width on smaller screens */
-    grid-gap: 10px; /* Smaller gap */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   }
 
   .main .gallery img {
-    object-fit: contain; /* Adjust how images fill their containers on small screens */
+    object-fit: contain; 
   }
 }
 
 @media (max-width: 480px) {
   .main .gallery {
-    grid-template-columns: 1fr; /* Single column layout on very small screens */
+    grid-template-columns: 1fr; 
   }
 }
