@@ -4,7 +4,6 @@
     grid-gap: 20px;
     align-items: flex-end;
     align-content: flex-start;
-    justify-items: stretch;
     flex-wrap: wrap;
     justify-content: space-around;
 }
