@@ -4,7 +4,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-h1, nav, footer {
+.header, nav, p {
     font-family: 'Playfair Display', serif;
     font-size: 2rem; /* Standard size for mobile */
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
