@@ -1,5 +1,5 @@
 .grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates responsive columns */
     grid-gap: 20px; /* Adds space between grid items */
     align-items: stretch; /* Stretches items to fill the available space */
