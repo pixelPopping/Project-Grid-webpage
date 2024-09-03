@@ -3,11 +3,10 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates responsive columns */
     grid-gap: 20px; /* Adds space between grid items */
     align-items: stretch; /* Stretches items to fill the available space */
+    flex-wrap: wrap;
 }
 
 .grid img {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-    height: 100vh;
-    width: 100vw;
 }
