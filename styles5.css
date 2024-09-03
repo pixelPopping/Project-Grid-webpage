@@ -1,15 +1,14 @@
 body {
     margin: 0;
-    font-size: 1rem; /* Standaardgrootte voor mobiel */
+    font-size: 1rem; /* Standard size for mobile */
     font-family: 'Playfair Display', serif;
-  }
-  
-.h1 nav footer{
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem; /* Standaard grootte voor mobiel */
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  }
+}
 
+h1, nav, footer {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; /* Standard size for mobile */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
 
 .grid {
     display: flex;
@@ -24,4 +23,5 @@ body {
     max-width: 100%; /* Ensures images don’t exceed their container width */
     height: auto; /* Maintains the aspect ratio */
 }
+
 
