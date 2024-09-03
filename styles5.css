@@ -6,7 +6,7 @@ body {
 
 .header, nav, p {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem; /* Standard size for mobile */
+    font-size: 1rem; /* Standard size for mobile */
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -22,8 +22,6 @@ body {
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     max-width: 100%; /* Ensures images don’t exceed their container width */
     height: auto; /* Maintains the aspect ratio */
-    padding-right: 5%;
-    padding-left: 5%;
 }
 
 
