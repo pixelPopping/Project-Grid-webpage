@@ -2,7 +2,7 @@
     display: flex;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
-    align-items: flex-end;
+    align-items: stretch;
     align-content: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
